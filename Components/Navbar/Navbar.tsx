@@ -3,6 +3,7 @@ import { motion, useCycle } from "framer-motion";
 import { MenuToggle } from "./MenuToggle";
 import styled from "@emotion/styled";
 import NavItems from "./NavItems";
+import { useDimensions } from "./Dimensions";
 
 const sidebar = {
   open: (height = 1000) => ({
@@ -38,11 +39,18 @@ const NavbarDiv = styled(motion.div)({
 
 export const Navbar = () => {
   const [isOpen, toggleOpen] = useCycle(false, true);
+  const containerRef = React.useRef(null);
+  const { height } = useDimensions(containerRef);
 
   return (
-    <motion.nav initial={false} animate={isOpen ? "open" : "closed"}>
+    <motion.nav
+      initial={false}
+      custom={height}
+      ref={containerRef}
+      animate={isOpen ? "open" : "closed"}
+    >
       <NavbarDiv variants={sidebar}>
-        <NavItems  />
+        <NavItems />
       </NavbarDiv>
       <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>
