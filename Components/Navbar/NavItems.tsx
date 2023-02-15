@@ -25,14 +25,14 @@ const variants_menuItem = {
     y: 0,
     opacity: 1,
     transition: {
-      y: { stiffness: 100, velocity: -100 },
+      y: { stiffness: 1000, velocity: -100 },
     },
   },
   closed: {
     y: 50,
     opacity: 0,
     transition: {
-      y: { stiffness: 100 },
+      y: { stiffness: 1000 },
     },
   },
 };
