@@ -11,16 +11,15 @@ const sidebar = {
       type: "spring",
       stiffness: 20,
       restDelta: 2,
-      duration: 0.1,
     },
   }),
   closed: {
     clipPath: "circle(0px at 40px 40px)",
     transition: {
       type: "spring",
+      delay: 0.5,
       stiffness: 400,
       damping: 40,
-      duration: 0.1,
     },
   },
 };

@@ -91,7 +91,7 @@ export default function Projects() {
         <h1 className="1st_h1">My Work</h1>
         <h2 className="2nd_h1"> Projects</h2>
       </HeadingDiv>
-      <ProjectsDiv data-aos="fade-left">
+      <ProjectsDiv data-aos="fade-up">
         <Swiper
           slidesPerView={"auto"}
           spaceBetween={30}

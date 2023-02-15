@@ -13,10 +13,10 @@ import MenuItem from "./MenuItem";
 
 const variants = {
   open: {
-    transition: { staggerChildren: 0.37, delayChildren: 0.1 },
+    transition: { staggerChildren: .07, delayChildren: 0.2 },
   },
   closed: {
-    transition: { staggerChildren: 0.35, staggerDirection: -1 },
+    transition: { staggerChildren: .05, staggerDirection: -1 },
   },
 };
 
@@ -69,15 +69,6 @@ const NavigationLinks = styled("div")({
   },
 });
 
-const GetCvDiv = styled("div")({
-  padding: "35px 25px",
-  display: "flex",
-  "& > button": {
-    fontSize: 24,
-    fontWeight: 600,
-    textTransform: "capitalize",
-  },
-});
 
 const list_of_NavItems = [
   { icon: <FaHome />, link: "#home", name: "Home" },
@@ -119,12 +110,6 @@ export default function NavItems() {
 
   return (
     <Motiondiv variants={variants}>
-      {/* <Divider /> */}
-      {/* <GetCvDiv>
-        <Button fullWidth={true} variant="contained" disableElevation>
-          GET CV
-        </Button>
-      </GetCvDiv> */}
       <Divider />
       <NavigationLinks>
         {list_of_NavItems.map((i, index) => (
