@@ -42,8 +42,8 @@ const ContactItem = styled("div")({
 
 const contacts = [
   {
-    link: "mailto:anuj.kashyap@anujkashyap.online",
-    text: "anuj.kashyap@anujkashyap.online",
+    link: "mailto:anuj.kashyap.me@gmail.com",
+    text: "anuj.kashyap.me@gmail.com",
     image: "/Images/email.svg",
   },
   {

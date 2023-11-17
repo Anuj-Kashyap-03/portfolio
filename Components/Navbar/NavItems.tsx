@@ -13,7 +13,7 @@ import MenuItem from "./MenuItem";
 
 const variants = {
   open: {
-    transition: { staggerChildren: .07, delayChildren: 0.3 },
+    transition: { staggerChildren: .07, delayChildren: 0.1 },
   },
   closed: {
     transition: { staggerChildren: .05, staggerDirection: -1 },
